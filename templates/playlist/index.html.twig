@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes Playlists{% endblock %}
+
+{% block body %}
+<h1>Playlists</h1>
+<ul>
+{% for playlist in playlists %}
+    <li>{{ playlist.titre }} - {{ playlist.description }}</li>
+{% else %}
+    <li>Aucune playlist</li>
+{% endfor %}
+</ul>
+<a href="{{ path('playlist_new') }}">Nouvelle playlist</a>
+{% endblock %}
+
