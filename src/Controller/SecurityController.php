@@ -15,7 +15,7 @@ class SecurityController extends AbstractController
         $error = $authenticationUtils->getLastAuthenticationError();
         $lastUsername = $authenticationUtils->getLastUsername();
 
-        return $this->render('site_copie/login/index.html.twig', [
+        return $this->render('template2/login/index.html.twig', [
 
             'last_username' => $lastUsername,
             'error' => $error,
