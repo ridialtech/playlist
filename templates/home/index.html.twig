@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <h1>Bienvenue</h1>
+    <p>Cette application permet de gérer vos playlists audio et vidéo.</p>
+    {% if app.user %}
+        <a href="{{ path('playlist_index') }}">Voir mes playlists</a>
+    {% else %}
+        <a href="{{ path('app_login') }}">Se connecter</a>
+    {% endif %}
+{% endblock %}
