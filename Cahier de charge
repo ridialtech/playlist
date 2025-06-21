@@ -1,0 +1,10 @@
+cree une application permettant aux utilisateurs de
+ceree et geres leurs playlis audio/ video
+gere l'authentification , les roles et les restrictions d'acces
+2 types de user : admin et user
+l'administrateur peut voir tous les playlists
+l'admin ne peut pas supprimer de play list des personnes
+user ne peut que cree et voir ses playlist
+user : id, nom ,email , password
+playlist : id, titre , description, user , date ajout
+media : id, titre , user, playlist , date ajout
